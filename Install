@@ -1,0 +1,15 @@
+apt update
+apt install git -y
+https://github.com/Wh1t3h4t/BasicScripts.git /Scripts
+mv -v /Scripts/Repos/Sources /
+cp -v /Sources/#Kali.Rolling.list /etc/apt/sources.list
+rm  -v -r /Scripts/Repos
+apt update --allow-insecure-repositories --allow-unauthenticated
+git clone https://github.com/Wh1t3h4t/D0K5.git /Shared/D0k5
+apt install terminator -y 
+apt install hxtools -y --install-recommends --install-suggests --allow-unauthenticated 
+apt install hcxtools -y --install-recommends --install-suggests --allow-unauthenticated 
+apt install hcxdumptool -y --install-recommends --install-suggests --allow-unauthenticated
+apt install hcxpcaptool -y --install-recommends --install-suggests --allow-unauthenticated
+apt install cowpatty -y --install-recommends --install-suggests --allow-unauthenticated
+apt install pyrit -y --install-recommends --install-suggests --allow-unauthenticated
